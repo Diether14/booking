@@ -1,6 +1,7 @@
 <template>
   <div>
     <form :action="action" method="post">
+        <input type="hidden" name="_token" :value="csrf">
         <div class="form-group">
             <label for="name">Name</label>
             <input type="text" class="form-control" v-model="name" id="name" name="name" placeholder="Name">
@@ -16,7 +17,8 @@ export default {
     data(){
         return {
             name: '',
-            action: '/api/buildings/update/' + this.buildingId,
+            action: '/buildings/update/' + this.buildingId,
+            csrf: document.querySelector('meta[name="csrf-token"]').getAttribute('content'),
         }
     },
     created(){
