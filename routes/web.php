@@ -16,7 +16,5 @@ Route::view('/', 'index');
 Route::prefix('buildings')->group(function () {
     Route::view('/index', 'assets.buildings.index');
     Route::get('/edit/{id}', 'BuildingsController@edit');
-    Route::get('/update/{id}', 'BuildingsController@update');
     Route::get('/create', 'BuildingsController@create');
-    Route::get('/store', 'BuildingsController@store');
 });

@@ -16,7 +16,7 @@ export default {
     data(){
         return {
             name: '',
-            action: '/buildings/update/' + this.buildingId,
+            action: '/api/buildings/update/' + this.buildingId,
         }
     },
     created(){
