@@ -1,6 +1,6 @@
 <template>
   <div>
-    <form action="/api/buildings/store">
+    <form action="/api/buildings/store" method="post">
         <div class="form-group">
             <label for="name">Name</label>
             <input type="text" class="form-control" v-model="name" id="name" name="name" placeholder="Name">

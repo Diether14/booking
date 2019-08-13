@@ -1822,7 +1822,7 @@ __webpack_require__.r(__webpack_exports__);
   data: function data() {
     return {
       name: '',
-      action: '/buildings/update/' + this.buildingId
+      action: '/api/buildings/update/' + this.buildingId
     };
   },
   created: function created() {
@@ -37235,7 +37235,7 @@ var render = function() {
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
   return _c("div", [
-    _c("form", { attrs: { action: "/buildings/store" } }, [
+    _c("form", { attrs: { action: "/api/buildings/store", method: "post" } }, [
       _c("div", { staticClass: "form-group" }, [
         _c("label", { attrs: { for: "name" } }, [_vm._v("Name")]),
         _vm._v(" "),
@@ -37350,7 +37350,7 @@ var render = function() {
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
   return _c("div", [
-    _c("form", { attrs: { action: _vm.action } }, [
+    _c("form", { attrs: { action: _vm.action, method: "post" } }, [
       _c("div", { staticClass: "form-group" }, [
         _c("label", { attrs: { for: "name" } }, [_vm._v("Name")]),
         _vm._v(" "),
