@@ -20,6 +20,10 @@ window.Vue = require('vue');
 // files.keys().map(key => Vue.component(key.split('/').pop().split('.')[0], files(key).default));
 
 Vue.component('example-component', require('./components/ExampleComponent.vue').default);
+Vue.component('buildings-index', require('./components/buildings/index.vue').default);
+Vue.component('buildings-edit', require('./components/buildings/edit.vue').default);
+Vue.component('buildings-add', require('./components/buildings/add.vue').default);
+Vue.component('building', require('./components/buildings/building.vue').default);
 
 /**
  * Next, we will create a fresh Vue application instance and attach it to
