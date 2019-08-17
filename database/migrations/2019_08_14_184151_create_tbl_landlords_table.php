@@ -4,7 +4,7 @@ use Illuminate\Support\Facades\Schema;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class CreateTblBuilding extends Migration
+class CreateTblLandlordsTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,9 +13,10 @@ class CreateTblBuilding extends Migration
      */
     public function up()
     {
-        Schema::create('tbl_building', function (Blueprint $table) {
+        Schema::create('tbl_landlords', function (Blueprint $table) {
             $table->bigIncrements('id');
-            $table->string('name', 191);
+            $table->string('firstname');
+            $table->string('lastname');
             $table->timestamps();
         });
     }
@@ -27,6 +28,6 @@ class CreateTblBuilding extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('tbl_building');
+        Schema::dropIfExists('tbl_landlords');
     }
 }

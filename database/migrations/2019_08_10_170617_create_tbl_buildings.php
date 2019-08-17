@@ -4,7 +4,7 @@ use Illuminate\Support\Facades\Schema;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class RenameTblBuildingTable extends Migration
+class CreateTblBuildings extends Migration
 {
     /**
      * Run the migrations.
@@ -13,7 +13,11 @@ class RenameTblBuildingTable extends Migration
      */
     public function up()
     {
-        Schema::rename('tbl_building', 'tbl_buildings');
+        Schema::create('tbl_buildings', function (Blueprint $table) {
+            $table->bigIncrements('id');
+            $table->string('name', 191);
+            $table->timestamps();
+        });
     }
 
     /**
@@ -23,6 +27,6 @@ class RenameTblBuildingTable extends Migration
      */
     public function down()
     {
-        //
+        Schema::dropIfExists('tbl_buildings');
     }
 }

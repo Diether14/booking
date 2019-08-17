@@ -4,12 +4,12 @@ namespace App;
 
 use Illuminate\Database\Eloquent\Model;
 
-class Building extends Model
+class Landlord extends Model
 {
-    protected $table = 'tbl_buildings';
+    protected $table = 'tbl_landlords';
 
     /**
-     * Get the properties for the building.
+     * Get the properties for the landlord.
      */
     public function properties()
     {

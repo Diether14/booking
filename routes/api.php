@@ -21,6 +21,10 @@ Route::prefix('buildings')->group(function () {
     Route::get('getall', 'BuildingsController@index');
     Route::get('show/{id}', 'BuildingsController@show');
     Route::delete('destroy/{id}', 'BuildingsController@destroy');
-    Route::post('/update/{id}', 'BuildingsController@update');
-    Route::post('/store', 'BuildingsController@store');
+});
+
+Route::prefix('properties')->group(function () {
+    Route::get('getall', 'PropertiesController@index');
+    Route::get('show/{id}', 'PropertiesController@show');
+    Route::delete('destroy/{id}', 'PropertiesController@destroy');
 });

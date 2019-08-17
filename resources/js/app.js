@@ -24,6 +24,10 @@ Vue.component('buildings-index', require('./components/buildings/index.vue').def
 Vue.component('buildings-edit', require('./components/buildings/edit.vue').default);
 Vue.component('buildings-add', require('./components/buildings/add.vue').default);
 Vue.component('building', require('./components/buildings/building.vue').default);
+Vue.component('properties-index', require('./components/properties/index.vue').default);
+Vue.component('properties-edit', require('./components/properties/edit.vue').default);
+Vue.component('properties-add', require('./components/properties/add.vue').default);
+Vue.component('property', require('./components/properties/property.vue').default);
 
 /**
  * Next, we will create a fresh Vue application instance and attach it to

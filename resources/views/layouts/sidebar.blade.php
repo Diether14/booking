@@ -29,7 +29,7 @@
     </li>
     
     <li class="nav-item">
-        <a class="nav-link" href="charts.html">
+        <a class="nav-link" href="{{ url('/properties/index') }}">
             <i class="fas fa-home"></i>
             <span>Properties</span>
         </a>
