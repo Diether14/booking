@@ -11,6 +11,7 @@ class BuildingsTableSeeder extends Seeder
      */
     public function run()
     {
+        
         factory(Building::class, 50)->create();
     }
 }
